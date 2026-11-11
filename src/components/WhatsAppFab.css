@@ -1,0 +1,35 @@
+.wa-fab {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 18px 0 16px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #08331a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 14px 34px -10px rgba(16, 120, 60, 0.6);
+  transition: transform 0.3s var(--ease);
+}
+.wa-fab:hover {
+  transform: translateY(-3px);
+}
+.wa-fab svg {
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 640px) {
+  .wa-fab {
+    width: 56px;
+    padding: 0;
+    justify-content: center;
+  }
+  .wa-fab__label {
+    display: none;
+  }
+}
